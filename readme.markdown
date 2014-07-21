@@ -28,6 +28,10 @@ MAD-X can help you generate your accelerator lattice, and store it in the geomet
 
 To see the MAD-X program that generates SixTrack input please check the folder [__madx__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/madx).
 
+### Execute SixTrack in LSF
+
+To see what that means explore the folder [__run_lsf_template__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template).
+
 Plotting Absorptions and Distributions
 --------------------------------------
 

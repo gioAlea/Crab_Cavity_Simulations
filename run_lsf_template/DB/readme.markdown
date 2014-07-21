@@ -34,9 +34,9 @@ The first number ``6``, indicates the __number of independent CCs__. Bruce works
 
 4. Indicates the __number of free turns__, i.e., the number of turns with the cavity voltage to 0, so it acts like a drift space.
 
-5. Indicates the __number of voltage ramping turns__. Bruce looks for an adiabatic ramping, which means that the number of ramping turns has to be greater or equal to 10. At the moment the code is done such as the voltage increases linearly.
+5. Indicates the __number of voltage ramping turns__. At the moment the code is done such as the voltage increases linearly.
 
-6. Indicates the __plateau voltage__, i.e. the optimal voltage or design voltage.
+6. Indicates the __ number of turns at plateau voltage__, i.e. at design voltage.
 
 7. Indicates the __number of turns in which the voltage changes from the plateau voltage to the failure voltage__.
 

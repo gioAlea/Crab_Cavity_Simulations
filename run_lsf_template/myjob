@@ -1,0 +1,115 @@
+#!/bin/tcsh -v
+#setenv LANG en_US.UTF-8
+#echo $PYTHONPATH
+#Usage: loop [eng: inj/lowb] [app:450, coll, all, ecoll, or nothing] [halo: hor/ver/skw] [beam: b1/b2] [queue name] [i_start] [i_stop]
+ set eng=$1
+ set app=$2
+ set halo=$3
+ set beam=$4
+ set queue=$5
+ set seed=$6
+ set DIR=/afs/cern.ch/work/a/ansantam/private/simulations/TEST.MP
+
+rm -rf $DIR/result/$eng$app
+mkdir $DIR/result/$eng$app
+
+echo 'Launching the job number ' $seed 
+echo 'Added job to queue' $queue
+
+cat >! run.$eng$app.$halo.$beam.$seed.job << endofmyjob
+
+#--- copy database and executables
+cp -p $DIR/DB/* .
+cp -p $DIR/bin/* .
+ls -l
+
+#--- copy SixTrack input 
+cp -p $DIR/input/fort.2
+cp -p $DIR/input/fort.3
+
+#--- copy SixTrack executable
+cp -p $DIR/bin/SixTrack_coll_fvlineal2 Sixtrack
+
+#--- copy Data Bases
+cp -p $DIR/DB/CC_dataf .
+cp -p $DIR/DB/CollDB.alltclp-tcld.b1.new .
+cp -p $DIR/DB/CollPositions.alltclp-tcld.b1.dat .
+cp -p $DIR/DB/SurveyWithCrossing_no-offset_lowb_B1.dat SurveyWithCrossing_XP_lowb.dat
+cp -p $DIR/DB/allapert_ats_20121023.$beam allapert.$beam
+#cp -p $DIR/bin/allapert_hllhc_2013.09.04.$beam allapert.$beam
+
+
+#execute SixTrack --------------
+./Sixtrack 
+
+echo 'Sixtrack ran!'
+
+ls -lh
+
+#--- copy data to local scratch for further analysis
+# cp -p coll_summary.dat $DIR/result/$eng$app/summ.$eng.$halo.$beam.$seed.txt
+# cp -p FirstImpacts.dat $DIR/result/$eng$app/FirstImpacts.$eng.$halo.$beam.$seed.dat
+# cp -p efficiency.dat $DIR/result/$eng$app/eff.$eng.$halo.$beam.$seed.txt
+
+#copy BeamLossPattern
+cp -p $DIR/bin/BeamLossPattern BeamLossPattern
+
+#execute BeamLossPattern------------
+./BeamLossPattern $eng tracks2.dat $eng\_$halo\_$beam\_$seed allapert.$beam
+
+
+#Command to remove the nul characters in LPI...
+perl -pi -e 's/\0/  /g' LPI*
+
+#--- copy data to result directory
+cp -p LP_$eng\_$halo\_$beam\_$seed.s $DIR/result/$eng$app/.
+cp -p LPI_$eng\_$halo\_$beam\_$seed.s $DIR/result/$eng$app/.
+
+#cp -p collgaps.dat $DIR/result/$eng$app/collgap.$eng.$halo.$beam.txt
+#cp -p FLUKA_impacts.dat $DIR/result/$eng$app/FLUKA_impacts.$eng.$halo.$beam.$seed.dat
+#cp -p sigmasettings.out $DIR/result/$eng$app/sigmasettings.$eng.$halo.$beam.$seed.out
+
+# # using CleanInelastic to remove fake hits from FLUKAImpacts -------------
+#cp -p $DIR/bin/CleanInelastic .
+# ##cp -p $DIR/bin/CleanInelastic_2013-08-19 CleanInelastic
+
+# # cp -p $DIR/CollPositions.$beam.dat CollPositions.$beam.dat
+#cp -p $DIR/DB/CollPositions.alltclp-tcld.b1.dat CollPositions.$beam.dat
+# ##cp -p $DIR/DB/CollPositions.b1.dat CollPositions.$beam.dat
+
+# echo "before CleanInelastic"
+#./CleanInelastic FLUKA_impacts.dat  LPI_$eng\_$halo\_$beam\_$seed.* CollPositions.$beam.dat coll_summary.dat
+# echo "after CleanInelastic"
+
+ls -lh
+gzip -r *.dat
+gzip -r *.s
+
+cp -p coll_summary.dat* $DIR/result/$eng$app/summ.$eng.$halo.$beam.$seed.txt.gz
+# cp -p FirstImpacts.dat* $DIR/result/$eng$app/FirstImpacts.$eng.$halo.$beam.$seed.dat.gz
+# #cp -p coll_ellipse.dat* $DIR/result/$eng$app/coll_ellipse.$eng.$halo.$beam.$seed.dat.gz
+# #cp -p efficiency.dat $DIR/result/$eng$app/eff.$eng.$halo.$beam.$seed.txt.gz
+# #cp -p localLOSSES.txt $DIR/result/$eng$app/localloss.$eng.$halo.$beam.$seed.txt.gz
+cp -p dist0.dat* $DIR/result/$eng$app/dist0.$eng.$halo.$beam.$seed.dat.gz
+cp -p distn.dat* $DIR/result/$eng$app/distn.$eng.$halo.$beam.$seed.dat.gz
+cp -p survival.dat* $DIR/result/$eng$app/survival.$eng.$halo.$beam.$seed.dat.gz
+cp -p amplitude.dat* $DIR/result/$eng$app/amplitude.$eng.$halo.$beam.dat.gz
+# cp -p collgaps.dat* $DIR/result/$eng$app/collgap.$eng.$halo.$beam.txt.gz
+# cp -p LPI_$eng\_$halo\_$beam\_$seed.s* $DIR/result/$eng$app/.
+#cp -p impacts_fake.dat* $DIR/result/$eng$app/impacts_fake.$eng.$halo.$beam.$seed.dat.gz
+#cp -p impacts_real.dat* $DIR/result/$eng$app/impacts_real.$eng.$halo.$beam.$seed.dat.gz
+cp -p all_absorptions.dat* $DIR/result/$eng$app/all_absorptions.$eng.$halo.$beam.$seed.dat.gz
+# cp -p tracks2.dat* $DIR/result/$eng$app/tracks2.dat.gz
+# #end of job
+endofmyjob
+
+#
+set STAT = $?
+if ( ! ${STAT} == 0 ) exit 99
+#
+chmod 744 run.$eng$app.$halo.$beam.$seed.job
+fs flush run.$eng$app.$halo.$beam.$seed.job
+#pool of 100 Gb
+bsub -e error$eng$app -o log$eng$app -R "pool>50000" -J $eng$app.$halo.$beam.$seed -q $queue run.$eng$app.$halo.$beam.$seed.job
+# bsub -e error$eng$app -o log$eng$app -R "pool>3000000" -J $eng$app.$halo.$beam.$seed -q $queue run.$eng$app.$halo.$beam.$seed.job
+#

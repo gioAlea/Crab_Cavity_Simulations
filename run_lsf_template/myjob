@@ -8,7 +8,7 @@
  set beam=$4
  set queue=$5
  set seed=$6
- set DIR=/afs/cern.ch/work/a/ansantam/private/simulations/TEST.MP
+ set DIR=/afs/cern.ch/work/a/ansantam/public/local_loss_map_failure
 
 rm -rf $DIR/result/$eng$app
 mkdir $DIR/result/$eng$app
@@ -21,11 +21,12 @@ cat >! run.$eng$app.$halo.$beam.$seed.job << endofmyjob
 #--- copy database and executables
 cp -p $DIR/DB/* .
 cp -p $DIR/bin/* .
+cp -p $DIR/input/* .
 ls -l
 
 #--- copy SixTrack input 
-cp -p $DIR/input/fort.2
-cp -p $DIR/input/fort.3
+cp -p $DIR/input/fc.2_nosep_allcc fort.2
+cp -p $DIR/input/fort.3_blockf fort.3
 
 #--- copy SixTrack executable
 cp -p $DIR/bin/SixTrack_coll_fvlineal2 Sixtrack
@@ -57,7 +58,6 @@ cp -p $DIR/bin/BeamLossPattern BeamLossPattern
 #execute BeamLossPattern------------
 ./BeamLossPattern $eng tracks2.dat $eng\_$halo\_$beam\_$seed allapert.$beam
 
-
 #Command to remove the nul characters in LPI...
 perl -pi -e 's/\0/  /g' LPI*
 
@@ -65,20 +65,22 @@ perl -pi -e 's/\0/  /g' LPI*
 cp -p LP_$eng\_$halo\_$beam\_$seed.s $DIR/result/$eng$app/.
 cp -p LPI_$eng\_$halo\_$beam\_$seed.s $DIR/result/$eng$app/.
 
+
+
 #cp -p collgaps.dat $DIR/result/$eng$app/collgap.$eng.$halo.$beam.txt
-#cp -p FLUKA_impacts.dat $DIR/result/$eng$app/FLUKA_impacts.$eng.$halo.$beam.$seed.dat
+cp -p FLUKA_impacts.dat $DIR/result/$eng$app/FLUKA_impacts.$eng.$halo.$beam.$seed.dat
 #cp -p sigmasettings.out $DIR/result/$eng$app/sigmasettings.$eng.$halo.$beam.$seed.out
 
 # # using CleanInelastic to remove fake hits from FLUKAImpacts -------------
-#cp -p $DIR/bin/CleanInelastic .
+cp -p $DIR/bin/CleanInelastic .
 # ##cp -p $DIR/bin/CleanInelastic_2013-08-19 CleanInelastic
 
 # # cp -p $DIR/CollPositions.$beam.dat CollPositions.$beam.dat
-#cp -p $DIR/DB/CollPositions.alltclp-tcld.b1.dat CollPositions.$beam.dat
+cp -p $DIR/DB/CollPositions.alltclp-tcld.b1.dat CollPositions.$beam.dat
 # ##cp -p $DIR/DB/CollPositions.b1.dat CollPositions.$beam.dat
 
 # echo "before CleanInelastic"
-#./CleanInelastic FLUKA_impacts.dat  LPI_$eng\_$halo\_$beam\_$seed.* CollPositions.$beam.dat coll_summary.dat
+./CleanInelastic FLUKA_impacts.dat  LPI_$eng\_$halo\_$beam\_$seed.* CollPositions.$beam.dat coll_summary.dat
 # echo "after CleanInelastic"
 
 ls -lh
@@ -96,8 +98,8 @@ cp -p survival.dat* $DIR/result/$eng$app/survival.$eng.$halo.$beam.$seed.dat.gz
 cp -p amplitude.dat* $DIR/result/$eng$app/amplitude.$eng.$halo.$beam.dat.gz
 # cp -p collgaps.dat* $DIR/result/$eng$app/collgap.$eng.$halo.$beam.txt.gz
 # cp -p LPI_$eng\_$halo\_$beam\_$seed.s* $DIR/result/$eng$app/.
-#cp -p impacts_fake.dat* $DIR/result/$eng$app/impacts_fake.$eng.$halo.$beam.$seed.dat.gz
-#cp -p impacts_real.dat* $DIR/result/$eng$app/impacts_real.$eng.$halo.$beam.$seed.dat.gz
+cp -p impacts_fake.dat* $DIR/result/$eng$app/impacts_fake.$eng.$halo.$beam.$seed.dat.gz
+cp -p impacts_real.dat* $DIR/result/$eng$app/impacts_real.$eng.$halo.$beam.$seed.dat.gz
 cp -p all_absorptions.dat* $DIR/result/$eng$app/all_absorptions.$eng.$halo.$beam.$seed.dat.gz
 # cp -p tracks2.dat* $DIR/result/$eng$app/tracks2.dat.gz
 # #end of job

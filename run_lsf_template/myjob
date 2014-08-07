@@ -8,7 +8,7 @@
  set beam=$4
  set queue=$5
  set seed=$6
- set DIR=/afs/cern.ch/work/a/ansantam/public/local_loss_map_failure
+ set DIR=/afs/cern.ch/work/a/ansantam/public/
 
 rm -rf $DIR/result/$eng$app
 mkdir $DIR/result/$eng$app
@@ -84,25 +84,21 @@ cp -p $DIR/DB/CollPositions.alltclp-tcld.b1.dat CollPositions.$beam.dat
 # echo "after CleanInelastic"
 
 ls -lh
-gzip -r *.dat
-gzip -r *.s
 
-cp -p coll_summary.dat* $DIR/result/$eng$app/summ.$eng.$halo.$beam.$seed.txt.gz
-# cp -p FirstImpacts.dat* $DIR/result/$eng$app/FirstImpacts.$eng.$halo.$beam.$seed.dat.gz
-# #cp -p coll_ellipse.dat* $DIR/result/$eng$app/coll_ellipse.$eng.$halo.$beam.$seed.dat.gz
-# #cp -p efficiency.dat $DIR/result/$eng$app/eff.$eng.$halo.$beam.$seed.txt.gz
-# #cp -p localLOSSES.txt $DIR/result/$eng$app/localloss.$eng.$halo.$beam.$seed.txt.gz
-cp -p dist0.dat* $DIR/result/$eng$app/dist0.$eng.$halo.$beam.$seed.dat.gz
-cp -p distn.dat* $DIR/result/$eng$app/distn.$eng.$halo.$beam.$seed.dat.gz
-cp -p survival.dat* $DIR/result/$eng$app/survival.$eng.$halo.$beam.$seed.dat.gz
-cp -p amplitude.dat* $DIR/result/$eng$app/amplitude.$eng.$halo.$beam.dat.gz
-# cp -p collgaps.dat* $DIR/result/$eng$app/collgap.$eng.$halo.$beam.txt.gz
-# cp -p LPI_$eng\_$halo\_$beam\_$seed.s* $DIR/result/$eng$app/.
-cp -p impacts_fake.dat* $DIR/result/$eng$app/impacts_fake.$eng.$halo.$beam.$seed.dat.gz
-cp -p impacts_real.dat* $DIR/result/$eng$app/impacts_real.$eng.$halo.$beam.$seed.dat.gz
-cp -p all_absorptions.dat* $DIR/result/$eng$app/all_absorptions.$eng.$halo.$beam.$seed.dat.gz
-# cp -p tracks2.dat* $DIR/result/$eng$app/tracks2.dat.gz
-# #end of job
+cp -p coll_summary.dat* $DIR/result/$eng$app/summ.$eng.$halo.$beam.$seed.txt
+cp -p dist0.dat* $DIR/result/$eng$app/dist0.$eng.$halo.$beam.$seed.dat
+cp -p distn.dat* $DIR/result/$eng$app/distn.$eng.$halo.$beam.$seed.dat
+cp -p survival.dat* $DIR/result/$eng$app/survival.$eng.$halo.$beam.$seed.dat
+cp -p amplitude.dat* $DIR/result/$eng$app/amplitude.$eng.$halo.$beam.dat
+cp -p impacts_fake.dat* $DIR/result/$eng$app/impacts_fake.$eng.$halo.$beam.$seed.dat
+cp -p impacts_real.dat* $DIR/result/$eng$app/impacts_real.$eng.$halo.$beam.$seed.dat
+cp -p all_absorptions.dat* $DIR/result/$eng$app/all_absorptions.$eng.$halo.$beam.$seed.dat
+# cp -p FirstImpacts.dat* $DIR/result/$eng$app/FirstImpacts.$eng.$halo.$beam.$seed.dat
+# #cp -p coll_ellipse.dat* $DIR/result/$eng$app/coll_ellipse.$eng.$halo.$beam.$seed.dat
+# #cp -p efficiency.dat $DIR/result/$eng$app/eff.$eng.$halo.$beam.$seed.txt
+# #cp -p localLOSSES.txt $DIR/result/$eng$app/localloss.$eng.$halo.$beam.$seed.txt
+# cp -p collgaps.dat* $DIR/result/$eng$app/collgap.$eng.$halo.$beam.txt
+
 endofmyjob
 
 #
@@ -111,7 +107,6 @@ if ( ! ${STAT} == 0 ) exit 99
 #
 chmod 744 run.$eng$app.$halo.$beam.$seed.job
 fs flush run.$eng$app.$halo.$beam.$seed.job
-#pool of 100 Gb
-bsub -e error$eng$app -o log$eng$app -R "pool>50000" -J $eng$app.$halo.$beam.$seed -q $queue run.$eng$app.$halo.$beam.$seed.job
-# bsub -e error$eng$app -o log$eng$app -R "pool>3000000" -J $eng$app.$halo.$beam.$seed -q $queue run.$eng$app.$halo.$beam.$seed.job
-#
+
+#pool of 60 Gb
+bsub -R "pool>60000" -J $eng$app.$halo.$beam.$seed -q $queue run.$eng$app.$halo.$beam.$seed.job

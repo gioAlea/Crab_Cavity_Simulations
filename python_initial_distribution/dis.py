@@ -76,7 +76,8 @@ if __name__ == "__main__":
     y0,y1=npy.histogram(G1(10**4,s=1.0),50,new=True)
     
     #y2=G2(10**4,s1=1.0,s2=1.5)
-    p0=[0.0, 0.0, 0.] 
+    p0=[0.0, 0.0, 0.] print 'sigma_x = %s'% sigma_x
+    print 'sigma_y = %s'% sigma_y
     p1,suc=optimize.leastsq(errfunc,p0[:],args=(y1[:-1], y0))
     print p1,suc
     sys.exit()

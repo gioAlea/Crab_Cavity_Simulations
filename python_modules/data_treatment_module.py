@@ -2,6 +2,8 @@ import os
 import re
 import glob
 import numpy as np
+from scipy.stats import scoreatpercentile                                                                         
+from numpy import sort      
 
 def concatenate1(regex):
 	for f in glob.glob(regex):
@@ -21,3 +23,4 @@ def convert_to_csv(inp, outp):
 	                outfile.write(",".join(columns)+"\n")
 
 	            # if regex.match(line) is None or np.isnan(line) is False or np.isinf(line) is False:
+

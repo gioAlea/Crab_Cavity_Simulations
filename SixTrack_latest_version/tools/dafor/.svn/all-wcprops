@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/dafor
+END
+dafor.f
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/dafor/dafor.f
+END
+Makefile_f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/dafor/Makefile_f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/dafor/Makefile
+END

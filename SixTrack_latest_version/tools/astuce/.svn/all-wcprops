@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/astuce
+END
+astuce.f
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/astuce/astuce.f
+END
+Makefile_f90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/astuce/Makefile_f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/152/trunk/SixTrack/tools/astuce/Makefile
+END

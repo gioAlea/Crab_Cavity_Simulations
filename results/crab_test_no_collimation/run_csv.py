@@ -1,9 +1,10 @@
 import sys
-sys.path.append("../../private/simulations/python_modules/")
+sys.path.append("../../python_modules/")
 
 from data_treatment_module import *
-from plot_csv_module import *
-from plot_distributions_module import *
+# from plot_csv_module import *
+from plot_single_csv_module import *
+# from plot_distributions_module import *
 
 
 # TO PLOT NORMAL AND FAILURE
@@ -34,7 +35,11 @@ from plot_distributions_module import *
 # plot_csv(r'1s.csv', r'3s.csv', r'no_crabs.csv')
 #--------------------------------------------------------------
 
+# # PLOT THE DATA, SINGLE PLOT
+plot_single_csv(r'1s.csv', r'3s.csv', r'no_crabs.csv')
+#--------------------------------------------------------------
+
 # TO SEE A 3D DISTRIBUTION
 #--------------------------------------------------------------
 
-plot_distributions(r'3s.csv', r'no_crabs.csv')
+# plot_distributions(r'3s.csv', r'no_crabs.csv')

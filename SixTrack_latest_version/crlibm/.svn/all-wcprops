@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/guest/SixTrack/!svn/ver/177/trunk/SixTrack/crlibm
+END
+addition_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/addition_scs.c
+END
+double2scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/double2scs.c
+END
+Makefile.template
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/127/trunk/SixTrack/crlibm/Makefile.template
+END
+dtostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/124/trunk/SixTrack/crlibm/dtostr.c
+END
+cosine.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/cosine.c
+END
+cosine.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/cosine.h
+END
+csh_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/55/trunk/SixTrack/crlibm/csh_fast.c
+END
+round_near.c.orig
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/127/trunk/SixTrack/crlibm/round_near.c.orig
+END
+exp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/exp.c
+END
+division_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/division_scs.c
+END
+enable_xp.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/144/trunk/SixTrack/crlibm/enable_xp.c
+END
+wrapper_scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/wrapper_scs.h
+END
+log_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/log_fast.c
+END
+sine.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/sine.c
+END
+fpu_control.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/122/trunk/SixTrack/crlibm/fpu_control.h
+END
+csh_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/csh_fast.h
+END
+atan_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/atan_fast.c
+END
+exp.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/exp.h
+END
+Makefile.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/127/trunk/SixTrack/crlibm/Makefile.bat
+END
+trigo_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/trigo_fast.c
+END
+crlibm_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/crlibm_config.h
+END
+log_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/log_fast.h
+END
+sine.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/sine.h
+END
+atan_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/atan_fast.h
+END
+logsix.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/100/trunk/SixTrack/crlibm/logsix.c
+END
+multiplication_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/multiplication_scs.c
+END
+scs2double.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/scs2double.c
+END
+trigo_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/trigo_fast.h
+END
+crlibm_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/crlibm_private.h
+END
+round_ulp.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/122/trunk/SixTrack/crlibm/round_ulp.c
+END
+exp_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/exp_fast.c
+END
+disable_xp.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/144/trunk/SixTrack/crlibm/disable_xp.c
+END
+logsix.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/100/trunk/SixTrack/crlibm/logsix.h
+END
+rem_pio2.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/rem_pio2.c
+END
+round_ulp.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/122/trunk/SixTrack/crlibm/round_ulp.h
+END
+crlibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/101/trunk/SixTrack/crlibm/crlibm.h
+END
+exp_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/exp_fast.h
+END
+log.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guest/SixTrack/!svn/ver/177/trunk/SixTrack/crlibm/log.c
+END
+log10.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/log10.c
+END
+scs_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/scs_config.h
+END
+tan.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/tan.c
+END
+atan.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/atan.c
+END
+ericc.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/ericc.c
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/39/trunk/SixTrack/crlibm/log.h
+END
+log10.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/log10.h
+END
+scs_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/scs_private.h
+END
+tan.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/tan.h
+END
+zero_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/guest/SixTrack/!svn/ver/38/trunk/SixTrack/crlibm/zero_scs.c
+END
+atan.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/atan.h
+END
+dtoa_c.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/127/trunk/SixTrack/crlibm/dtoa_c.c
+END
+coefpi2.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/coefpi2.h
+END
+round_near.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/140/trunk/SixTrack/crlibm/round_near.c
+END
+dtoaf.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/guest/SixTrack/!svn/ver/127/trunk/SixTrack/crlibm/dtoaf.c
+END
+scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/18/trunk/SixTrack/crlibm/scs.h
+END

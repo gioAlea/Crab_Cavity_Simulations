@@ -10,7 +10,7 @@ Here is an example of a CC database:
 
 ```
 		# Database for cleaning insertion CC
-		6
+		6			# Number of independent CCs in the database
 		#
 (1) 	CRAB1		# Name of the cavity in uppercase
 (2) 	crab1		# Name of the cavity in lowercase

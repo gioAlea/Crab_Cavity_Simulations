@@ -115,4 +115,6 @@ beam_histogram(n_part, xp, 'xp')
 beam_profile(n_part, xp, 'xp')
 
 beam_scatter(x, xp, 'x', 'xp')
+
+plt.show()
 ```

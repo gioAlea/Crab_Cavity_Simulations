@@ -50,6 +50,8 @@ SixTrack without Collimation
 
 Find a special version of SixTrack without the collimation block in the folder [__run_bpm_template__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_bpm_template). This version comes in handy to study the behaviour of the crab cavities, since without the collimation block the program is much faster. There's a special marker (BPM) to see the trajectory at a certain point.
 
+![alt text](https://raw.githubusercontent.com/KFubuki/Crab_Cavity_Simulations/master/img/comparison_single_CC.png)
+
 
 Other executables
 -----------------

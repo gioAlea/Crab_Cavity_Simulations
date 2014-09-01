@@ -137,7 +137,7 @@ The Initial Coordinates input block is meant to manipulate how the initial coord
 * ``1``: denotes the emittance ratio (eII /eI ) of horizontal and vertical motion. 
 
 
-![alt text](https://raw.githubusercontent.com/KFubuki/CC_failure_simulation/trial/coor.png)
+![alt text](https://raw.githubusercontent.com/KFubuki/Crab_Cavity_Simulations/master/img/initial_coordinates.png)
 
 ####Remarks
 
@@ -186,7 +186,7 @@ Each data line holds three values as in table 3.1, except for the fourth line on
 (4) 	0.10E-07 0.10E-11 0.10E-09
 		NEXT
 ```
-![alt text](https://raw.githubusercontent.com/KFubuki/CC_failure_simulation/trial/iter.png)
+![alt text](https://raw.githubusercontent.com/KFubuki/Crab_Cavity_Simulations/master/img/iteration.png)
 
 ###Linear Optics Block
 
@@ -205,7 +205,6 @@ NEXT
 * ``3.75``: magnet length in meters
 * ``3.75``:
 
-![alt text](https://raw.githubusercontent.com/KFubuki/CC_failure_simulation/trial/elem.png)
 
 ###Beam Block
 

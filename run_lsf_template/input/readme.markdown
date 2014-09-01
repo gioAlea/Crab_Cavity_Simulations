@@ -17,9 +17,9 @@ Now we will describe the crab elements that appear:
 
 * __First column__: name of the cavity as described in __"CC_dataf"__ , like ``CRAB1``.
 * __Second column__: indicates a cavity element. It is indicated by the number ``23``.
-* __Third column__: cavity voltage.
+* __Third column__: cavity voltage [MV].
 * __Fourth column__: cavity frequency.
-* __Fifth column__: phase angle (0).
+* __Fifth column__: phase angle [rad].
 
 
 "fort.3"
@@ -263,15 +263,12 @@ Created by __Bruce Yee Rendon__.
 
 ```
 CRAB
-1 880 "CC_dataf"
+initcol inittrack "CC_dataf"
 ```
-* ``1``: indicates the __turn in which the collimators are installed__. The number ``1`` here is used by Bruce to achieve a steady state. 
-* ``880``: indicates the __turn in which you start saving the data__. If the data starts being saved before the first impact in the collimators you can have ghost losses, so in general it is recommended to put a high number here to prevent this.
-* ``"CC_dataf"``: calls the crab database described below.
+* ``initcol``: indicates the __turn in which the collimators are installed__. Before that turn the collimators are considered as drift spaces even if they are present in the lattice file [__fort.2__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input#fort2) and collimation block active. 
+* ``inittrack``: indicates the __turn in which you start saving the [__tracks2.dat__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/bin#sixtrack-output) data__. This file starts to record with _inittrack_, __OR__ with the first particle that impacts the collimators.
+* ``"CC_dataf"``: calls the [__crab database__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#cc_dataf).
 
-This file uses the collimator database __"CollDB.alltclp-tcld.b1.new"__, which describes the details of collimators' geometry, material, settings (opening). It will need to be updated as the collimator settings change.
-
-More information about a more general use of __crabs in SixTrack__ can be found [here](http://rcalaga.web.cern.ch/rcalaga/LHCCRABS/COLLIMATION/crabcoll.html).
 
 
 ### Collimation Block

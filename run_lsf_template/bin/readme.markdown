@@ -10,19 +10,18 @@ In this repository we can fin the executable __"SixTrack_coll_fvlineal2"__ (you 
 ```
 We can also find the _source code_, that we can check to see exactly what's going on: __"sixtrack.s_CC_block_vlineal_2"__.
 
-To run the standard SixTrack we can download it with ``svn co http://svn.cern.ch/guest/SixTrack ``. Then we will have to go into ``/SixTrack/trunk/SixTrack`` and type `` ./make-six gfortran collimat``. Then move the executable were we want.
 
 ###SixTrack input
 
 Make sure the input files are in the same folder (or define the path of each of the files in your launching script, like __"myjob"__):
 
-* __fc.2_nosep_allcc__: check [__TEST.MP/input__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/input) for more information.
-* __fort.3_blockf__: check [__TEST.MP/input__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/input) for more information.
-* __CC_dataf__ : check [__TEST.MP/DB__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/DB) for more information.
-* __CollDB.alltclp-tcld.b1.new__ : check [__TEST.MP/DB__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/DB) for more information.
-* __CollPositions.alltclp-tcld.b1.dat__: check [__TEST.MP/DB__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/DB) for more information. 
-* __SurveyWithCrossing_no-offset_lowb_B1.dat__: check [__TEST.MP/DB__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/DB) for more information. 
-* __allapert_ats_20121023__: check [__TEST.MP/DB__](https://github.com/KFubuki/CC_failure_simulation/tree/master/TEST.MP/DB) for more information.
+* __fc.2_nosep_allcc__: check [__ run_lsf_template__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input#fort2) for more information.
+* __fort.3_blockf__: check [__ run_lsf_template/input__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input#fort3) for more information.
+* __CC_dataf__ : check [__ run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#cc_dataf) for more information.
+* __CollDB.alltclp-tcld.b1.new__ : check [__ run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#colldballtclp-tcldb1new) for more information.
+* __CollPositions.alltclp-tcld.b1.dat__: check [__ run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#collpositionsalltclp-tcldb1dat) for more information. 
+* __SurveyWithCrossing_no-offset_lowb_B1.dat__: check [__ run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#surveywithcrossing_no-offset_lowb_b1dat) for more information. 
+* __allapert_ats_20121023__: check [__ run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#allapert_ats_20121023b1-) for more information.
 
 ###SixTrack output
 

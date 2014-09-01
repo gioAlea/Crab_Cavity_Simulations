@@ -21,7 +21,7 @@ To download the latest version:
 svn co http://svn.cern.ch/guest/SixTrack
 ```
 
-This will download something similar to the __SixTrack__ folder of this repository. To create the executable you will have to go to __SixTrack/trunk/Sixtrack__ and compile the source code _sixtrack.s_ with the command:
+This will download something similar to the [__SixTrack__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/SixTrack) folder of this repository. To create the executable you will have to go to __SixTrack/trunk/Sixtrack__ and compile the source code _sixtrack.s_ with the command:
 
 ```
 ./make_six gfortran collimat
@@ -33,19 +33,28 @@ Check the [official website](http://sixtrack.web.cern.ch/SixTrack/) for more inf
 SixTrack with Simulations of Crab Cavities
 ------------------------------------------
 
-There is a modified version of SixTrack, which includes a block to simulate crab cavities. Find the source code in this repository (sixtrack.s_CC_block_vlineal_2), and the executable in [__run_lsf_template/bin__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/bin).
+There is a modified version of SixTrack, which includes a block to simulate crab cavities. The changes with respect to the original SixTrack code are:
+
+* A new line describing the new element in the [__fort.2__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input#fort2) lattice file.
+
+* A new block in the _fort.3_ input file. Check it out [__here__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input#crab-block).
+
+* A new [__database__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB#cc_dataf). 
+
+
+Find the source code in this repository (_sixtrack.s_CC_block_vlineal_2_), and the executable in [__run_lsf_template/bin__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/bin).
 
 
 SixTrack without Collimation
 ----------------------------
 
-Find a special version of SixTrack without the collimation block in the folder [__run_bpm_template__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_bpm_template). This version is useful to study the behaviour of the crab cavities. There's a special marker (BPM) to see the trajectory at a certain point.
+Find a special version of SixTrack without the collimation block in the folder [__run_bpm_template__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_bpm_template). This version comes in handy to study the behaviour of the crab cavities, since without the collimation block the program is much faster. There's a special marker (BPM) to see the trajectory at a certain point.
 
 
 Other executables
 -----------------
 
-Find other executables complementary to SixTrack (namely _BeamLossPattern_ and _CleanInelastic_) and their description in [__run_lsf_template/bin__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/bin).
+Find other executables complementary to SixTrack for [collimation studies](http://lhc-collimation-project.web.cern.ch/lhc-collimation-project/BeamLossPattern.htm) (namely _BeamLossPattern_ and _CleanInelastic_) and their description in [__run_lsf_template/bin__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/bin).
 
 
 How does SixTrack work
@@ -53,8 +62,8 @@ How does SixTrack work
 
 To run SixTrack you will need several input files: 
 
-* Databases (find them in the folder [__run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB)). 
-* Geometry and parameter files __"fort.2"__ and __"fort.3"__, respectively (find them in the folder [__run_lsf_template/input__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input)). 
+* __Databases__ : find them in the folder [__run_lsf_template/DB__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/DB). 
+* __Geometry and parameter files__ :_"fort.2"_ and _"fort.3"_, find them in the folder [__run_lsf_template/input__](https://github.com/KFubuki/Crab_Cavity_Simulations/tree/master/run_lsf_template/input). 
 
 ### Generate the input with MAD-X
 

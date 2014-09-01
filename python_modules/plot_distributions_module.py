@@ -76,7 +76,7 @@ def beam_histogram(n_part, variable, string):
 	# --------------------------------------------------------------------------------------------------------------
 	# Plot Histogram of Samples
 	# --------------------------------------------------------------------------------------------------------------
-	n, bins, patches = P.hist((var_sigma), bins = nbins, normed = True, histtype = 'stepfilled', label = 'Histogram of the samples')
+	n, bins, patches = P.hist((var_sigma), bins = nbins - nbins/3, normed = True, histtype = 'stepfilled', label = 'Histogram of the samples')
 	P.setp(patches, 'facecolor', 'g', 'alpha', 0.75)
 
 	# --------------------------------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@ def beam_profile(n_part, variable, string):
 	# --------------------------------------------------------------------------------------------------------------
 	# Plot Histogram of Samples
 	# --------------------------------------------------------------------------------------------------------------
-	n, bins, patches = P.hist((var_sigma), bins = nbins, normed = False, histtype = 'step', label = 'Beam Profile')
+	n, bins, patches = P.hist((var_sigma), bins = nbins - nbins/3, normed = False, histtype = 'step', label = 'Beam Profile')
 	P.setp(patches, 'facecolor', 'g', 'alpha', 0.75)
 
 
@@ -228,9 +228,9 @@ def beam_scatter_three(variable_1, variable_2, variable_3, string_1, string_2, s
 
 def beam_scatter_comparison(variable_1, variable_2, variable_3, variable_4, string_1, string_2):
 
-	fig 	=figure()
-	ax1 	=fig.add_subplot(121)
-	ax2 	=fig.add_subplot(122)
+	fig 	= figure()
+	ax1 	= fig.add_subplot(121)
+	ax2 	= fig.add_subplot(122)
 
 	#FIRST PLOT (INITIAL CONDITIONS)
 	# --------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows
+END
+mkwindows
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/mkwindows
+END
+addition_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/addition_scs.c
+END
+double2scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/double2scs.c
+END
+cosine.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/cosine.c
+END
+cosine.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/cosine.h
+END
+csh_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/csh_fast.c
+END
+exp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/exp.c
+END
+division_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/division_scs.c
+END
+asin_rn.f
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/asin_rn.f
+END
+log_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/log_fast.c
+END
+sine.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/sine.c
+END
+csh_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/csh_fast.h
+END
+atan_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/atan_fast.c
+END
+exp.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/exp.h
+END
+Makefile.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/Makefile.bat
+END
+trigo_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/trigo_fast.c
+END
+crlibm_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/crlibm_config.h
+END
+log_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/log_fast.h
+END
+sine.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/sine.h
+END
+multiplication_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/multiplication_scs.c
+END
+atan_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/atan_fast.h
+END
+scs2double.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/scs2double.c
+END
+trigo_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/trigo_fast.h
+END
+atan2_rn.f
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/atan2_rn.f
+END
+crlibm_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/crlibm_private.h
+END
+exp_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/exp_fast.c
+END
+rem_pio2.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/rem_pio2.c
+END
+crlibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/crlibm.h
+END
+exp_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/exp_fast.h
+END
+log.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/log.c
+END
+log10.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/log10.c
+END
+scs_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/scs_config.h
+END
+tan.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/tan.c
+END
+atan.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/atan.c
+END
+ericc.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/ericc.c
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/log.h
+END
+log10.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/log10.h
+END
+acos_rn.f
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/acos_rn.f
+END
+scs_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/scs_private.h
+END
+tan.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/tan.h
+END
+zero_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/zero_scs.c
+END
+atan.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/atan.h
+END
+coefpi2.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/coefpi2.h
+END
+scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/19/tags/start/SixTrack/windows/scs.h
+END

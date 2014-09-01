@@ -59,8 +59,8 @@ def dist_generator(outfile, particles, emittance, beta, alpha, bunch, spread):
 	gamma		= Ep/mp
 	beta_r 		= sqrt(gamma**2 -1)/gamma
 
-	print 'Gamma = %s'% gamma
-	print 'Beta = %s'% beta_r
+	print 'Relativistic Gamma 		= %E'% gamma
+	print 'Relativistic Beta 		= %E'% beta_r
 
 	# Transverse Normalised Emittances [m . rad]
 	# --------------------------------------------------------------------------------------------------------------
@@ -69,8 +69,8 @@ def dist_generator(outfile, particles, emittance, beta, alpha, bunch, spread):
 	emn_x		= em_x/(beta_r*gamma)		# geometric
 	emn_y		= em_y/(beta_r*gamma)	
 
-	print 'emn_x = %s'% emn_x
-	print 'emn_y = %s'% emn_y
+	print 'emn_x 					= %E [m . rad]'% emn_x
+	print 'emn_y 					= %E [m . rad]'% emn_y
 
 	# The normalised emittance does not change as a function of energy and so can track beam degradation if the 
 	# particles are accelerated.
@@ -80,20 +80,20 @@ def dist_generator(outfile, particles, emittance, beta, alpha, bunch, spread):
 	beta_x		= beta						# Ratio of beam dimension and beam divergence in a symmetry point, 
 	beta_y		= beta_x					# associated to the transverse size of the beam. Beta star.
 
-	print 'beta_x = %s'% beta_x
-	print 'beta_y = %s'% beta_y
+	print 'beta_x 					= %E [m] '% beta_x
+	print 'beta_y 					= %E [m] '% beta_y
 
 	alpha_x		= alpha 					# Describes how strong x and x' are correlated. 
 	alpha_y		= alpha_x 					# alpha=0 --> beam has minimum or maximum
 
-	print 'alpha_x = %s'% alpha_x
-	print 'alpha_y = %s'% alpha_y
+	print 'alpha_x 				= %E [m] '% alpha_x
+	print 'alpha_y 				= %E [m] '% alpha_y
 
 	gamma_x		= (1 + (alpha_x)**2)/beta_x
 	gamma_y		= (1 + (alpha_y)**2)/beta_y
 
-	print 'gamma_x = %s'% gamma_x
-	print 'gamma_y = %s'% gamma_y
+	print 'gamma_x 				= %E [m] '% gamma_x
+	print 'gamma_y 				= %E [m] '% gamma_y
 
 	# RMS Bunch length [m], RMS energy spread [%] (RMS = root mean square)
 	# --------------------------------------------------------------------------------------------------------------
@@ -101,22 +101,22 @@ def dist_generator(outfile, particles, emittance, beta, alpha, bunch, spread):
 	sigma_E		= spread
 	em_z		= sigma_z*sigma_E
 
-	print 'em_z = %s'% em_z
+	print 'em_z 					= %E [m . rad]'% em_z
 
 	# Standard Deviations
 	# --------------------------------------------------------------------------------------------------------------
 	sigma_x		= sqrt(beta_x*emn_x)
 	sigma_y		= sqrt(beta_y*emn_y) 		# beam half width
 
-	print 'sigma_x = %s'% sigma_x
-	print 'sigma_y = %s'% sigma_y
+	print 'sigma_x 				= %E [m] '% sigma_x
+	print 'sigma_y 				= %E [m] '% sigma_y
 
 
 	sigma_px	= sqrt(gamma_x*emn_x) 		# beam divergence
 	sigma_py	= sqrt(gamma_y*emn_y)
 
-	print 'sigma_px = %s'% sigma_px
-	print 'sigma_py = %s'% sigma_py
+	print 'sigma_px 				= %E [m] '% sigma_px
+	print 'sigma_py 				= %E [m] '% sigma_py
 
 
 	# --------------------------------------------------------------------------------------------------------------

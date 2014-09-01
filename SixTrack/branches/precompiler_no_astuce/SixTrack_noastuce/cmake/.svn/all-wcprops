@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/121/branches/precompiler_no_astuce/SixTrack_noastuce/cmake
+END
+common_defs.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/guest/SixTrack/!svn/ver/121/branches/precompiler_no_astuce/SixTrack_noastuce/cmake/common_defs.cmake
+END
+sixtrack_defs.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/guest/SixTrack/!svn/ver/121/branches/precompiler_no_astuce/SixTrack_noastuce/cmake/sixtrack_defs.cmake
+END
+precomp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/guest/SixTrack/!svn/ver/121/branches/precompiler_no_astuce/SixTrack_noastuce/cmake/precomp.sh
+END

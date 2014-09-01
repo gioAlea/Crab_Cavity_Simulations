@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32
+END
+libX11.a
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libX11.a
+END
+libgrafX11.a
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libgrafX11.a
+END
+libXdmcp.a
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libXdmcp.a
+END
+libg2c.a
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libg2c.a
+END
+libxcb.a
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libxcb.a
+END
+libXau.a
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libXau.a
+END
+libpacklib_noshift.a
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libpacklib_noshift.a
+END
+libkernlib_noshift.a
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libkernlib_noshift.a
+END
+libgraflib.a
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/lib32/libgraflib.a
+END

@@ -1,0 +1,40 @@
+SHELL = /bin/sh
+
+FC = %%FC%%
+FCF = %%FCF%%
+FCL = %%FCL%%
+FCLMAP = %%FCLMAP%%
+CRLIBM = %%CRLIBM%%
+CERNLIB = %%CERNLIB%%
+gfortran_lib = %%gfortran_lib%%
+BOINC = %%BOINC%%
+NAGLIBC = %%NAGLIBC%%
+BEAMGAS = %%BEAMGAS%%
+
+%.o: %.f
+	$(FC) -c $(FCF) $<
+
+%.o: %.f90
+	$(FC) -c $(FCF) $<
+
+all: %%SIXTRACK%%
+
+dafor: dafor.o
+	$(FC) -m32 -o dafor dafor.o
+
+astuce: astuce.o
+	$(FC) -m32 -o astuce astuce.o $(NAGLIBC)
+
+boinc_api_fortran.o: boinc_api_fortran.C
+	gcc -c boinc_api_fortran.C
+
+%%SIXTRACK%%: $(MYHDF5LIB) track.o sixve.o sixvefox.o dabnews.o lielib.o $(BEAMGAS) $(BOINC) $(CRLIBM)
+	$(FC) $(FCLMAP) -o %%SIXTRACK%% track.o sixve.o sixvefox.o dabnews.o lielib.o $(BEAMGAS) \
+	$(BOINC) $(CERNLIB) $(CRLIBM) $(gfortran_lib) > sixtrack.map 2>&1
+
+%%SIXTRACK_DA%%: sixda.o sixsc.o sixscfox.o dabnew.o lielib.o $(CRLIBM)
+	$(FC) $(FCLMAP) -o %%SIXTRACK_DA%% sixda.o sixsc.o sixscfox.o dabnew.o lielib.o \
+	$(NAGLIB) $(CRLIBM) $(gfortran_lib) > sixtrack_da.map 2>&1
+
+clean: 
+	rm -f *.ast *.s *.c *.o %%SIXTRACK%% %%SIXTRACK_DA%%

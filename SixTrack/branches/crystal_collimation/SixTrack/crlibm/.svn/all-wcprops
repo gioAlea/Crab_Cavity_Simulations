@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm
+END
+addition_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/addition_scs.c
+END
+double2scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/double2scs.c
+END
+Makefile.template
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/Makefile.template
+END
+cosine.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/cosine.c
+END
+cosine.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/cosine.h
+END
+csh_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/csh_fast.c
+END
+exp.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/exp.c
+END
+division_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/division_scs.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/Makefile
+END
+asin_rn.f
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/asin_rn.f
+END
+wrapper_scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/wrapper_scs.h
+END
+log_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/log_fast.c
+END
+sine.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/sine.c
+END
+csh_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/csh_fast.h
+END
+atan_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/atan_fast.c
+END
+exp.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/exp.h
+END
+trigo_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/trigo_fast.c
+END
+crlibm_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/crlibm_config.h
+END
+log_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/log_fast.h
+END
+sine.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/sine.h
+END
+atan_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/atan_fast.h
+END
+logsix.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/logsix.c
+END
+multiplication_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/multiplication_scs.c
+END
+scs2double.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/scs2double.c
+END
+trigo_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/trigo_fast.h
+END
+atan2_rn.f
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/atan2_rn.f
+END
+crlibm_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/crlibm_private.h
+END
+exp_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/exp_fast.c
+END
+disable_xp.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/disable_xp.c
+END
+logsix.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/logsix.h
+END
+rem_pio2.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/rem_pio2.c
+END
+crlibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/crlibm.h
+END
+exp_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/exp_fast.h
+END
+log.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/log.c
+END
+log10.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/log10.c
+END
+scs_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/scs_config.h
+END
+tan.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/tan.c
+END
+atan.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/atan.c
+END
+infnani.f
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/infnani.f
+END
+ericc.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/ericc.c
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/log.h
+END
+log10.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/log10.h
+END
+acos_rn.f
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/acos_rn.f
+END
+scs_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/scs_private.h
+END
+tan.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/tan.h
+END
+zero_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/zero_scs.c
+END
+atan.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/atan.h
+END
+coefpi2.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/coefpi2.h
+END
+scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/108/branches/crystal_collimation/SixTrack/crlibm/scs.h
+END

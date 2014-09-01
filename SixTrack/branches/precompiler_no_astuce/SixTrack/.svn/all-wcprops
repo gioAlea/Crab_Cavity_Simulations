@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guest/SixTrack/!svn/ver/121/branches/precompiler_no_astuce/SixTrack
+END
+make_six
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/make_six
+END
+sixconv.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/121/branches/precompiler_no_astuce/SixTrack/sixconv.py
+END
+dabnew.s
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/dabnew.s
+END
+lielib.s
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/lielib.s
+END
+myboinc.f
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/myboinc.f
+END
+Makefile.boinc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/Makefile.boinc
+END
+Makefile.template
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/Makefile.template
+END
+astuce.f
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/astuce.f
+END
+sixtrack.s
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/sixtrack.s
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/guest/SixTrack/!svn/ver/120/branches/precompiler_no_astuce/SixTrack/README
+END

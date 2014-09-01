@@ -15,11 +15,19 @@ This repository contains the files to simulate a crab cavity failure for HL-LHC 
 SixTrack Program
 -----------------
 
-To download the latest version check the instructions in the [official website](http://sixtrack.web.cern.ch/SixTrack/). This will download something similar to the __SixTrack__ folder of this repository. To create the executable you will have to go to __SixTrack/trunk/Sixtrack__ and compile the source code _sixtrack.s_ with the command:
+To download the latest version:
+
+```
+svn co http://svn.cern.ch/guest/SixTrack
+```
+
+This will download something similar to the __SixTrack__ folder of this repository. To create the executable you will have to go to __SixTrack/trunk/Sixtrack__ and compile the source code _sixtrack.s_ with the command:
 
 ```
 ./make_six gfortran collimat
 ```
+
+Check the [official website](http://sixtrack.web.cern.ch/SixTrack/) for more information.
 
 
 SixTrack with Simulations of Crab Cavities

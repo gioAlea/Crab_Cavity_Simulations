@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/guest/SixTrack/!svn/ver/180/trunk/SixTrack
+END
+dafor.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/guest/SixTrack/!svn/ver/125/trunk/SixTrack/dafor.f
+END
+Makefile.boinc.mac.template
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/guest/SixTrack/!svn/ver/131/trunk/SixTrack/Makefile.boinc.mac.template
+END
+Makefile.boinc.template
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guest/SixTrack/!svn/ver/177/trunk/SixTrack/Makefile.boinc.template
+END
+boinc_zipitall.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guest/SixTrack/!svn/ver/151/trunk/SixTrack/boinc_zipitall.cpp
+END
+myboinc.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/guest/SixTrack/!svn/ver/151/trunk/SixTrack/myboinc.f
+END
+read_fortbin.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/guest/SixTrack/!svn/ver/166/trunk/SixTrack/read_fortbin.py
+END
+Makefile.template
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/151/trunk/SixTrack/Makefile.template
+END
+boinc_api_fortran.cpp.windows
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guest/SixTrack/!svn/ver/128/trunk/SixTrack/boinc_api_fortran.cpp.windows
+END
+sixtrack.s
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/guest/SixTrack/!svn/ver/179/trunk/SixTrack/sixtrack.s
+END
+compareSS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/guest/SixTrack/!svn/ver/135/trunk/SixTrack/compareSS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/guest/SixTrack/!svn/ver/179/trunk/SixTrack/README
+END
+boinc_api_fortran.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/177/trunk/SixTrack/boinc_api_fortran.cpp
+END
+make_six
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/guest/SixTrack/!svn/ver/154/trunk/SixTrack/make_six
+END
+make_windows.template
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guest/SixTrack/!svn/ver/128/trunk/SixTrack/make_windows.template
+END
+lielib.s
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/guest/SixTrack/!svn/ver/122/trunk/SixTrack/lielib.s
+END
+dabnew.s
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/guest/SixTrack/!svn/ver/153/trunk/SixTrack/dabnew.s
+END
+compile_fortran.bat.template
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guest/SixTrack/!svn/ver/128/trunk/SixTrack/compile_fortran.bat.template
+END
+sixsrc.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/guest/SixTrack/!svn/ver/180/trunk/SixTrack/sixsrc.py
+END
+link_intel.bat.template
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guest/SixTrack/!svn/ver/146/trunk/SixTrack/link_intel.bat.template
+END
+make_mac.template
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guest/SixTrack/!svn/ver/132/trunk/SixTrack/make_mac.template
+END
+astuce.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/guest/SixTrack/!svn/ver/161/trunk/SixTrack/astuce.f
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/guest/SixTrack/!svn/ver/160/trunk/SixTrack/COPYING
+END

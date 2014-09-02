@@ -105,6 +105,7 @@ for	values in data:
 	z.append	(float(values[4]))
 	e.append	(float(values[5]))
 
+n_part = sum(1 for _ in data)
 
 beam_scatter_three(x, y, z, 'x', 'y', 'z')
 

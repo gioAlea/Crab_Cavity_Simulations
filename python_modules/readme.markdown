@@ -72,7 +72,7 @@ beam_scatter_comparison_three(variable_1, variable_2, variable_3, variable_4, va
 ```
 Examples of use
 ----------------
- ### Generation and plotting of initial distribution
+### Generation and plotting of initial distribution
 
 ```python
 # --------------------------------------------------------------------------------------------------------------

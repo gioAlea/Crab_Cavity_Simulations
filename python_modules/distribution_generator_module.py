@@ -148,7 +148,7 @@ def dist_generator(outfile, particles, emittance, beta, alpha, bunch, spread):
 	  t[i]  = factor*number5*sigma_z
 	  pt[i] = factor*number6*sigma_E
 	  
-	  f.write('%8.6f %8.6f %8.6f %8.6f %8.6f %8.6f\n' % (x[i],xp[i],y[i],yp[i],1000*t[i],(Ep+pt[i]*Ep)/1e6))
+	  f.write('%12.10f %12.10f %12.10f %12.10f %12.10f %12.10f\n' % (x[i],xp[i],y[i],yp[i],1000*t[i],(Ep+pt[i]*Ep)/1e6))
 
 	f.close()
 	  

@@ -54,6 +54,8 @@ def beam_histogram(n_part, variable, string):
 	# To put it in units of sigma 
 	# --------------------------------------------------------------------------------------------------------------
 	var_sigma	= variable/sigma
+	var_max 	= max(var_sigma)
+	var_min 	= min(var_sigma)
 
 	# --------------------------------------------------------------------------------------------------------------
 	# Compute the best number of bins 
@@ -70,7 +72,7 @@ def beam_histogram(n_part, variable, string):
 
 	# Number of bins
 	# --------------------------------------------------------------------------------------------------------------
-	nbins 		= int(max(var_sigma) - min(var_sigma) / (bin_size))
+	nbins 		= int(var_max - var_min/ (bin_size))
 	print 'Number of bins= %s'% nbins
 
 	# --------------------------------------------------------------------------------------------------------------
@@ -88,14 +90,14 @@ def beam_histogram(n_part, variable, string):
 	P.plot(bins, y, 'k--', linewidth=1.5, label = 'Probability Density Function')
 
 	density = gaussian_kde(var_sigma)  # your data
-	xgrid = np.linspace(min(var_sigma), max(var_sigma), n_part)   
+	xgrid = np.linspace(var_min, var_max, n_part)   
 	plt.plot(xgrid, density(xgrid),'k--', color = 'red', linewidth=1.5, label = 'Kernel Density Estimation Method')
 
 	# Horizontal axis
 	# --------------------------------------------------------------------------------------------------------------
 	plt.xlabel(r'%s [$\sigma$]'%string)
 	plt.ticklabel_format(style = 'sci', axis = 'x', scilimits = (0,0))
-	plt.xlim(min(var_sigma), max(var_sigma))
+	plt.xlim(var_min, var_max)
 	# plt.grid(b = True, which = 'both', axis = 'both', linestyle = '--')
 
 	# Vertical axis
@@ -110,9 +112,9 @@ def beam_histogram(n_part, variable, string):
 	# title 		= 'Distribution in : particles = %.0f, $\mu$ = %E, $\sigma$ = %E'%(n_part,mu,sigma)
 	# plt.title(title)
 	plt.legend(loc = 'upper left')
-	plt.text((max(var_sigma)/2) + (max(var_sigma)/14), max(y)/2 + max(y)/3.0, r'Particles = %.0f'%n_part)
-	plt.text((max(var_sigma)/2) + (max(var_sigma)/14), max(y)/2 + max(y)/3.7 , r'$\mu$ = %E'%mu)
-	plt.text((max(var_sigma)/2) + (max(var_sigma)/14), max(y)/2 + max(y)/4.5, r'$\sigma$ = %E'%sigma)   
+	plt.text((var_max/2) + (var_max/14), max(y)/2 + max(y)/3.0, r'Particles = %.0f'%n_part)
+	plt.text((var_max/2) + (var_max/14), max(y)/2 + max(y)/3.7 , r'$\mu$ = %E'%mu)
+	plt.text((var_max/2) + (var_max/14), max(y)/2 + max(y)/4.5, r'$\sigma$ = %E'%sigma)   
 
 	
 
@@ -127,6 +129,8 @@ def beam_profile(n_part, variable, string):
 	# To put it in units of sigma 
 	# --------------------------------------------------------------------------------------------------------------
 	var_sigma	= variable/sigma
+	var_max 	= max(var_sigma)
+	var_min 	= min(var_sigma)
 
 	mu_new 		= np.mean(var_sigma)
 	sigma_new 	= np.std(var_sigma)
@@ -146,7 +150,7 @@ def beam_profile(n_part, variable, string):
 
 	# Number of bins
 	# --------------------------------------------------------------------------------------------------------------
-	nbins 		= int(max(var_sigma) - min(var_sigma) / (bin_size))
+	nbins 		= int(var_max - var_min/ (bin_size))
 	print 'Number of bins= %s'% nbins
 
 	# --------------------------------------------------------------------------------------------------------------
@@ -160,7 +164,7 @@ def beam_profile(n_part, variable, string):
 	# --------------------------------------------------------------------------------------------------------------
 	plt.xlabel(r'%s [$\sigma$]'%string)
 	plt.ticklabel_format(style = 'sci', axis = 'x', scilimits = (0,0))
-	plt.xlim(min(var_sigma), max(var_sigma))
+	plt.xlim(var_min, var_max)
 	# plt.grid(b = True, which = 'both', axis = 'both', linestyle = '--')
 
 	# Vertical axis
@@ -175,8 +179,8 @@ def beam_profile(n_part, variable, string):
 	# title 		= 'Distribution in : particles = %.0f, $\mu$ = %E, $\sigma$ = %E'%(n_part,mu,sigma)
 	# plt.title(title)
 	plt.legend(loc = 'upper left')
-	plt.text((max(var_sigma)/2) + (max(var_sigma)/14), (n_part/20)/(sqrt(2*pi)*sigma_new), r'Particles = %.0f'%n_part)
-	plt.text((max(var_sigma)/2) + (max(var_sigma)/14), (n_part/22)/(sqrt(2*pi)*sigma_new), r'$\sigma$ = %E'%sigma)
+	plt.text((var_max/2) + (var_max/14), (n_part/20)/(sqrt(2*pi)*sigma_new), r'Particles = %.0f'%n_part)
+	plt.text((var_max/2) + (var_max/14), (n_part/22)/(sqrt(2*pi)*sigma_new), r'$\sigma$ = %E'%sigma)
 
 
 	# # Plot exactly what's in the file (no normalisation)
@@ -187,7 +191,7 @@ def beam_profile(n_part, variable, string):
 	# ax.bar(x_values, y_values, log = False, width = bin_size, align = 'center')
 	# plt.xlabel(r'%s [$\sigma$]'%string)
 	# plt.ylabel(r'Number of Particles')
-	# plt.text((max(var_sigma)/2) + (max(var_sigma)/14), max(y)/2 + max(y)/3.1, r'Particles = %.0f'%n_part)
+	# plt.text((var_max/2) + (var_max/14), max(y)/2 + max(y)/3.1, r'Particles = %.0f'%n_part)
 	
 	
 	
